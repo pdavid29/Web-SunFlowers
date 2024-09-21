@@ -1,0 +1,89 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #152e59; /* Fondo beige suave, relacionado con los tonos de girasol */
+    color: #3e4e26; /* Texto verde oscuro, natural */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 3rem;
+    color: #f4a927; /* Amarillo girasol */
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Video Section */
+.video-wrapper {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(62, 78, 38, 0.3); /* Sombra suave con un tono verde oscuro */
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Footer with button */
+footer {
+    margin-top: 30px;
+}
+
+.custom-button {
+    background-color: #3e4e26; /* Verde oscuro, similar a las hojas de un girasol */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #273217; /* Un tono más oscuro del verde */
+    transform: translateY(-5px);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        margin-bottom: 10px; /* Less margin */
+    }
+
+    .custom-button {
+        padding: 10px 20px; /* Smaller button padding for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .wrapper {
+        padding: 10px; /* Less padding for mobile */
+    }
+}
